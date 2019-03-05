@@ -256,13 +256,14 @@ input:focus, textarea:focus, select:focus, button:focus {
 	background-color: #000000;
 }
 .prt_home_wrapper{
-	background-image:url("/HTML/images/wideHeadshot.JPG");
+	background-image:url("../images/wideHeadshot.JPG");
 	background-position: center center;
 	background-repeat:no-repeat;
 	background-size:cover;
 	position:relative;
 	overflow-y:auto;
     padding: 200px 0px;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 .prt_home_wrapper h1{
 	position:absolute;
@@ -270,10 +271,10 @@ input:focus, textarea:focus, select:focus, button:focus {
 	font-size:150px;
 	color: #ffffff;
 	font-weight:bold;
-	background: url(http://placehold.it/650X800) no-repeat;
-	-webkit-background-clip: text;
+	/* background: url(http://placehold.it/650X800) no-repeat; */
+	/* -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-    background-size: cover;
+    background-size: cover; */
 }
 .prt_logo_wrapper img{
     position: fixed;
@@ -314,7 +315,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_menu_wrapper a{
 	position:absolute;
 	text-transform:uppercase;
-	color:#202020;
+	color:#ffffff;
 	font-size:18px;
 	margin:0px auto;
 	z-index:1;
@@ -759,7 +760,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     width: 100%;
     top: 0;
     z-index: 1;
-    display: none;
+    display: none
 }
 .prt_contact_box{
 	
@@ -910,6 +911,22 @@ input:focus, textarea:focus, select:focus, button:focus {
 	background-image:url(http://placehold.it/450X250);
 }
 /*---------- Services css Start -------*/
+.slider-pager {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .slider-pager li {
+  background-color: #333;
+  color: #FFF;
+  padding: 1em;
+  margin: 0 0 1em 0;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  }
+
 .prt_services_wrapper{
     background-color: #ffffff;
     position: absolute;
@@ -1071,9 +1088,10 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.3s;
 }
 .prt_couter_wrapper{
-    display: inline-block;
-    width: 100%;
-	background-image:url(http://placehold.it/1920X600);
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+	background-image: url("../images/wideHeadshot.JPG");
 	background-position:center center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -1128,36 +1146,32 @@ input:focus, textarea:focus, select:focus, button:focus {
 #canvas .circle {
 	display: inline-block;
 	margin: 1em;
-	width: 200px;
-	height: 200px;
+	width: 75px;
+	height: 75px;
 }
 #canvas h5{
 	font-size:18px;
 	text-align:center;
 }
 #circles-1{
-	background-image:url(http://placehold.it/200X200);
 	border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #circles-2{
-	background-image:url(http://placehold.it/200X200);
 	border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #circles-3{
-	background-image:url(http://placehold.it/200X200);
 	border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #circles-4{
-	background-image:url(http://placehold.it/200X200);
 	border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -1229,12 +1243,18 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_portfolio_box a{
 	display:inline-block;
 	width:100%;
+	text-align:center;
+}
+.prt_portfolio_text a, h3{
+  display:inline-block;
+	width:100%;
 	margin-bottom:30px;
 	text-align:center;
 }
 .prt_portfolio_img{
 	display:inline-block;
-	width:auto;
+  width:auto;
+  margin-bottom: 30px;
 	text-align:center;
 	position:relative;
 	overflow:hidden;
@@ -1302,7 +1322,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .prt_portfolio_text{
 	position:absolute;
-	bottom:-111px;
+	bottom:-900px;
 	left:0px;
 	width:100%;
 	text-align:left;
@@ -1321,14 +1341,17 @@ input:focus, textarea:focus, select:focus, button:focus {
 	margin-top:0px;
 }
 .prt_portfolio_text p{
-	margin:0px;
 	text-transform:capitalize;
-	color:#000000;
+  color:#000000;
+  display:inline-block;
+	width:100%;
+	margin-bottom:30px;
+	text-align:center;
 }
 /*---------- Footer css Start -------*/
 .prt_footer_wrapper{
 	background-color:#f5f5f5;
-	margin-top:115px;
+	margin-top:75px;
 }
 .prt_footer_wrapper p{
     display: inline-block;

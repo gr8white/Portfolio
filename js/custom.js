@@ -47,10 +47,10 @@ Assigned to: ThemeForest
 				items:1
 			},
 			600:{
-				items:3
+				items:1
 			},
 			1000:{
-				items:3
+				items:1
 			}
 		}
 	});
@@ -161,7 +161,15 @@ Assigned to: ThemeForest
 			$('div.prt_services_slider_box .prt_img_click').removeClass('active');
 			$(this).addClass('active');	
 		}
-	});
+  });
+  
+  $(document).ready(function() {
+    //Set the carousel options
+    $('#quote-carousel').carousel({
+      pause: true,
+      interval: 4000,
+    });
+  });
 	
 	// Open Close main Section Js
 	var AplCss;
